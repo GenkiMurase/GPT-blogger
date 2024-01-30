@@ -1,0 +1,8 @@
+const openai = new OpenAI({ apiKey: API_KEY });
+const completion = await openai.chat.completions.create({
+  messages: [{
+      role: "system",
+      content: "いつもお世話になっております。"
+  }],
+  model: "gpt-3.5-turbo",
+});
